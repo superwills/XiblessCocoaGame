@@ -1,0 +1,370 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3DE307482C6FB23F00663252 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3DE307472C6FB23F00663252 /* Assets.xcassets */; };
+		3DE3075D2C6FB29200663252 /* main.mm in Sources */ = {isa = PBXBuildFile; fileRef = 3DE307542C6FB29100663252 /* main.mm */; };
+		3DE3075E2C6FB29200663252 /* OpenGLView.mm in Sources */ = {isa = PBXBuildFile; fileRef = 3DE307552C6FB29100663252 /* OpenGLView.mm */; };
+		3DE3075F2C6FB29200663252 /* MacOSWindow.mm in Sources */ = {isa = PBXBuildFile; fileRef = 3DE307582C6FB29100663252 /* MacOSWindow.mm */; };
+		3DE307602C6FB29200663252 /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 3DE307592C6FB29100663252 /* AppDelegate.mm */; };
+		3DE307612C6FB29200663252 /* StopWatch.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3DE3075B2C6FB29100663252 /* StopWatch.cpp */; };
+		3DE307642C6FB35F00663252 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DE307632C6FB35F00663252 /* OpenGL.framework */; };
+		3DE307662C6FB36300663252 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DE307652C6FB36300663252 /* Cocoa.framework */; };
+		3DE307682C6FB36B00663252 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DE307672C6FB36B00663252 /* QuartzCore.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3DE307412C6FB23D00663252 /* XiblessGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XiblessGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3DE307442C6FB23D00663252 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		3DE307472C6FB23F00663252 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3DE3074E2C6FB23F00663252 /* XiblessGame.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = XiblessGame.entitlements; sourceTree = "<group>"; };
+		3DE307542C6FB29100663252 /* main.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = main.mm; sourceTree = "<group>"; };
+		3DE307552C6FB29100663252 /* OpenGLView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = OpenGLView.mm; sourceTree = "<group>"; };
+		3DE307562C6FB29100663252 /* OpenGLView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpenGLView.h; sourceTree = "<group>"; };
+		3DE307572C6FB29100663252 /* MacOSWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MacOSWindow.h; sourceTree = "<group>"; };
+		3DE307582C6FB29100663252 /* MacOSWindow.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = MacOSWindow.mm; sourceTree = "<group>"; };
+		3DE307592C6FB29100663252 /* AppDelegate.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = AppDelegate.mm; sourceTree = "<group>"; };
+		3DE3075A2C6FB29100663252 /* Superglobals.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Superglobals.h; sourceTree = "<group>"; };
+		3DE3075B2C6FB29100663252 /* StopWatch.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = StopWatch.cpp; sourceTree = "<group>"; };
+		3DE3075C2C6FB29100663252 /* StopWatch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StopWatch.h; sourceTree = "<group>"; };
+		3DE307632C6FB35F00663252 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
+		3DE307652C6FB36300663252 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		3DE307672C6FB36B00663252 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3DE3073E2C6FB23D00663252 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3DE307662C6FB36300663252 /* Cocoa.framework in Frameworks */,
+				3DE307642C6FB35F00663252 /* OpenGL.framework in Frameworks */,
+				3DE307682C6FB36B00663252 /* QuartzCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3DE307382C6FB23D00663252 = {
+			isa = PBXGroup;
+			children = (
+				3DE3075A2C6FB29100663252 /* Superglobals.h */,
+				3DE307442C6FB23D00663252 /* AppDelegate.h */,
+				3DE307592C6FB29100663252 /* AppDelegate.mm */,
+				3DE307572C6FB29100663252 /* MacOSWindow.h */,
+				3DE307582C6FB29100663252 /* MacOSWindow.mm */,
+				3DE307562C6FB29100663252 /* OpenGLView.h */,
+				3DE307552C6FB29100663252 /* OpenGLView.mm */,
+				3DE3075C2C6FB29100663252 /* StopWatch.h */,
+				3DE3075B2C6FB29100663252 /* StopWatch.cpp */,
+				3DE307542C6FB29100663252 /* main.mm */,
+				3DE307432C6FB23D00663252 /* XiblessGame */,
+				3DE307422C6FB23D00663252 /* Products */,
+				3DE307622C6FB35E00663252 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		3DE307422C6FB23D00663252 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3DE307412C6FB23D00663252 /* XiblessGame.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3DE307432C6FB23D00663252 /* XiblessGame */ = {
+			isa = PBXGroup;
+			children = (
+				3DE307472C6FB23F00663252 /* Assets.xcassets */,
+				3DE3074E2C6FB23F00663252 /* XiblessGame.entitlements */,
+			);
+			path = XiblessGame;
+			sourceTree = "<group>";
+		};
+		3DE307622C6FB35E00663252 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3DE307672C6FB36B00663252 /* QuartzCore.framework */,
+				3DE307652C6FB36300663252 /* Cocoa.framework */,
+				3DE307632C6FB35F00663252 /* OpenGL.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3DE307402C6FB23D00663252 /* XiblessGame */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3DE307512C6FB23F00663252 /* Build configuration list for PBXNativeTarget "XiblessGame" */;
+			buildPhases = (
+				3DE3073D2C6FB23D00663252 /* Sources */,
+				3DE3073E2C6FB23D00663252 /* Frameworks */,
+				3DE3073F2C6FB23D00663252 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = XiblessGame;
+			productName = XiblessGame;
+			productReference = 3DE307412C6FB23D00663252 /* XiblessGame.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3DE307392C6FB23D00663252 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					3DE307402C6FB23D00663252 = {
+						CreatedOnToolsVersion = 15.4;
+					};
+				};
+			};
+			buildConfigurationList = 3DE3073C2C6FB23D00663252 /* Build configuration list for PBXProject "XiblessGame" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3DE307382C6FB23D00663252;
+			productRefGroup = 3DE307422C6FB23D00663252 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3DE307402C6FB23D00663252 /* XiblessGame */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3DE3073F2C6FB23D00663252 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3DE307482C6FB23F00663252 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3DE3073D2C6FB23D00663252 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3DE3075E2C6FB29200663252 /* OpenGLView.mm in Sources */,
+				3DE307612C6FB29200663252 /* StopWatch.cpp in Sources */,
+				3DE3075D2C6FB29200663252 /* main.mm in Sources */,
+				3DE307602C6FB29200663252 /* AppDelegate.mm in Sources */,
+				3DE3075F2C6FB29200663252 /* MacOSWindow.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		3DE3074F2C6FB23F00663252 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		3DE307502C6FB23F00663252 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		3DE307522C6FB23F00663252 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = XiblessGame/XiblessGame.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6B6K62DZTH;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMainNibFile = MainMenu;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = rz.XiblessGame;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+			};
+			name = Debug;
+		};
+		3DE307532C6FB23F00663252 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = XiblessGame/XiblessGame.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6B6K62DZTH;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMainNibFile = MainMenu;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = rz.XiblessGame;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3DE3073C2C6FB23D00663252 /* Build configuration list for PBXProject "XiblessGame" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3DE3074F2C6FB23F00663252 /* Debug */,
+				3DE307502C6FB23F00663252 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3DE307512C6FB23F00663252 /* Build configuration list for PBXNativeTarget "XiblessGame" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3DE307522C6FB23F00663252 /* Debug */,
+				3DE307532C6FB23F00663252 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3DE307392C6FB23D00663252 /* Project object */;
+}
